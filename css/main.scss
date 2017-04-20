@@ -63,6 +63,7 @@ body {
     padding: 0 10px;
     @media screen and (max-width: 639px) {
       padding: 0 5px;
+      font-size: 120%;
     }
 
     box-sizing: border-box;
@@ -105,20 +106,48 @@ body {
     margin: 5px auto;
     font-size: 120%;
     line-height: 180%;
+    @media screen and (max-width: 639px) {
+      line-height: 170%;
+    }
+    &.center {
+      text-align: center;
+    }
+  }
+  a {
+    text-decoration: underline;
+    &:visited {
+      color: #304030;
+    }
   }
 
   .article-headline {
     box-sizing: border-box;
     max-width: 700px;
     margin: 20px auto;
-    padding: 15px 20px;
+    padding: 30px 20px 10px;
     @media screen and (max-width: 639px) {
-      margin: 15px auto;
-      padding: 10px 15px;
+      margin: 20px auto 10px;
+      padding: 15px 15px;
     }
     border-top: solid 1px #003300;
     color: #114411;
-    font-size: 125%;
+    h3 {
+      font-size: 140%;
+      margin: 0;
+    }
+  }
+
+  &.article-dark {
+    color: #fff;
+    .article-headline {
+      color: #fff0f0;
+      border-color: #fff0f0;
+    }
+    a {
+      text-decoration: underline;
+      color: #fff0f0;
+    }
+
   }
 }
 
@@ -171,4 +200,63 @@ body {
 
 #article-intro {
   background-color: #f0f0f0;
+  #socialicons {
+    margin-top: 20px;
+    img {
+      height: 35px;
+      margin: 0 10px;
+    }
+  }
+}
+
+#article-access {
+  #access-googlemap {
+    text-align: center;
+  }
+}
+
+#article-inquiry {
+  height: 600px;
+  @media screen and (max-width: 640px) {
+    height: 650px;
+  }
+  background-image: url(../img/pamphlet.png);
+  background-size: cover;
+  background-position: center;
+
+  #inquiry-form-pc {
+    @media screen and (max-width: 639px) {
+      display: none;
+    }
+    text-align: center;
+    iframe {
+      width: 600px;
+      height: 375px;
+    }
+  }
+  #inquiry-form-touch {
+    @media screen and (min-width: 640px) {
+      display: none;
+    }
+    text-align: center;
+    iframe {
+      width: 300px;
+      height: 460px;
+    }
+  }
+}
+
+#article-credit {
+  background: #142b18;
+
+  h3 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 140%;
+  }
+  #copyright {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 80%;
+  }
 }

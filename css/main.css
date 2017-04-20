@@ -51,7 +51,8 @@ body {
     color: #555; }
     @media screen and (max-width: 639px) {
       .fixed-nav a {
-        padding: 0 5px; } }
+        padding: 0 5px;
+        font-size: 120%; } }
     .fixed-nav a:hover, .fixed-nav a.active {
       border-bottom: solid 2px #e73262;
       color: #e73262;
@@ -80,18 +81,37 @@ body {
     margin: 5px auto;
     font-size: 120%;
     line-height: 180%; }
+    @media screen and (max-width: 639px) {
+      .full-article p {
+        line-height: 170%; } }
+    .full-article p.center {
+      text-align: center; }
+  .full-article a {
+    text-decoration: underline; }
+    .full-article a:visited {
+      color: #304030; }
   .full-article .article-headline {
     box-sizing: border-box;
     max-width: 700px;
     margin: 20px auto;
-    padding: 15px 20px;
+    padding: 30px 20px 10px;
     border-top: solid 1px #003300;
-    color: #114411;
-    font-size: 125%; }
+    color: #114411; }
     @media screen and (max-width: 639px) {
       .full-article .article-headline {
-        margin: 15px auto;
-        padding: 10px 15px; } }
+        margin: 20px auto 10px;
+        padding: 15px 15px; } }
+    .full-article .article-headline h3 {
+      font-size: 140%;
+      margin: 0; }
+  .full-article.article-dark {
+    color: #fff; }
+    .full-article.article-dark .article-headline {
+      color: #fff0f0;
+      border-color: #fff0f0; }
+    .full-article.article-dark a {
+      text-decoration: underline;
+      color: #fff0f0; }
 
 #title-hero {
   box-sizing: border-box;
@@ -132,5 +152,49 @@ body {
 
 #article-intro {
   background-color: #f0f0f0; }
+  #article-intro #socialicons {
+    margin-top: 20px; }
+    #article-intro #socialicons img {
+      height: 35px;
+      margin: 0 10px; }
+
+#article-access #access-googlemap {
+  text-align: center; }
+
+#article-inquiry {
+  height: 600px;
+  background-image: url(../img/pamphlet.png);
+  background-size: cover;
+  background-position: center; }
+  @media screen and (max-width: 640px) {
+    #article-inquiry {
+      height: 650px; } }
+  #article-inquiry #inquiry-form-pc {
+    text-align: center; }
+    @media screen and (max-width: 639px) {
+      #article-inquiry #inquiry-form-pc {
+        display: none; } }
+    #article-inquiry #inquiry-form-pc iframe {
+      width: 600px;
+      height: 375px; }
+  #article-inquiry #inquiry-form-touch {
+    text-align: center; }
+    @media screen and (min-width: 640px) {
+      #article-inquiry #inquiry-form-touch {
+        display: none; } }
+    #article-inquiry #inquiry-form-touch iframe {
+      width: 300px;
+      height: 460px; }
+
+#article-credit {
+  background: #142b18; }
+  #article-credit h3 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 140%; }
+  #article-credit #copyright {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 80%; }
 
 /*# sourceMappingURL=main.css.map */
