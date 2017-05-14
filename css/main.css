@@ -197,4 +197,18 @@ body {
     text-align: center;
     font-size: 80%; }
 
+.talk-header {
+  margin-bottom: 10px; }
+  .talk-header span.title {
+    font-size: 140%; }
+  .talk-header span.name {
+    font-size: 110%; }
+  .talk-header span.major {
+    font-size: 110%;
+    color: gray; }
+
+.talk-abs {
+  margin-bottom: 30px;
+  margin-left: 20px; }
+
 /*# sourceMappingURL=main.css.map */
