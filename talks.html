@@ -21,27 +21,16 @@
     <script src="js/main.js"></script>
 
     <script id="template" type="x-tmpl-mustache">
-<h3>理工系講演</h3>
+<h3>{{header}}</h3>
 <dl>
-{{#rikei}}
+{{#talks}}
 <dt class=talk-header><span class=title>{{title}}</span>
 <br />
 <span class=name>{{name}}</span>
 <span class=major>({{major}})</span>
 </dt>
 <dd class=talk-abs>{{abs}}</dd>
-{{/rikei}}
-</dl>
-<h3>人文系講演</h3>
-<dl>
-{{#bunkei}}
-<dt class=talk-header><span class=title>{{title}}</span>
-<br />
-<span class=name>{{name}}</span>
-<span class=major>({{major}})</span>
-</dt>
-<dd class=talk-abs>{{abs}}</dd>
-{{/bunkei}}
+{{/talks}}
 </dl>
     </script>
   </head>
