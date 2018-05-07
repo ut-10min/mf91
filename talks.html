@@ -22,15 +22,14 @@
     <script src="js/main.js"></script>
 
     <script id="template" type="x-tmpl-mustache">
-<h3>{{header}}</h3>
 <dl>
 {{#talks}}
 <dt class=talk-header><span class=title>{{title}}</span>
 <br />
 <span class=name>{{name}}</span>
-<span class=major>({{major}})</span>
+<span class=major>({{affMajor}} {{affMinor}})</span>
 </dt>
-<dd class=talk-abs>{{abs}}</dd>
+<dd class=talk-abs>{{abstract}}</dd>
 {{/talks}}
 </dl>
     </script>
