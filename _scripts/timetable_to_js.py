@@ -1,8 +1,14 @@
+#!/usr/bin/env python3
+
 import xlrd
 import json
 import sys
 
 def main():
+    if sys.argv != 2:
+        print("Usage: %s excel_file" % sys.argv[0])
+        sys.exit(1)
+        
     tablefile = xlrd.open_workbook(sys.argv[1])
     tablesheet = tablefile.sheet_by_index(1)
     row_start = 2
